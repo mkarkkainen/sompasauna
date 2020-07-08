@@ -30,10 +30,6 @@ let water = document.querySelector("#water")
 let air = document.querySelector("#air")
 let time = document.querySelector("#time")
 
-
-const container = [];
-let latestReading = 0
-
 fetch('https://iot.fvh.fi/opendata/uiras/uiras2_v1.json')
     .then(response => response.json())
     .then(data => {
